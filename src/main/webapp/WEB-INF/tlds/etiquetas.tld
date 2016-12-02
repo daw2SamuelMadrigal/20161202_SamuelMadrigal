@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<taglib version="2.1" xmlns="http://java.sun.com/xml/ns/javaee" 
+        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+        xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-jsptaglibrary_2_1.xsd">
+    
+    <tlib-version>1.0</tlib-version>
+    <short-name>etiquetas</short-name>
+    <uri>/WEB-INF/tlds/etiquetas</uri>
+    
+    <tag>
+        <name>letraDNI</name>
+        <tag-class>es.albarregas.etiquetas.LetraDNI</tag-class>
+        <body-content>empty</body-content>
+        <dynamic-attributes>true</dynamic-attributes>
+    </tag>
+    
+    <tag>
+        <name>cabecera</name>
+        <tag-class>es.albarregas.etiquetas.Cabecera</tag-class>
+        <body-content>empty</body-content>
+        <attribute>
+            <name>logo</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>nombre</name>
+            <required>false</required>
+        </attribute>
+        <attribute>
+            <name>eslogan</name>
+            <required>false</required>
+        </attribute>
+    </tag>
+    
+    <tag> 
+        <name>operacion</name> 
+        <tag-class>es.albarregas.etiquetas.Operacion</tag-class> 
+        <body-content>empty</body-content> 
+        <attribute>
+            <name>val1</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>val2</name>
+            <required>true</required>
+        </attribute>
+        <attribute>
+            <name>operacion</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+    
+    <tag> 
+        <name>lonqitud</name> 
+        <tag-class>es.albarregas.etiquetas.Longitud</tag-class> 
+        <body-content>empty</body-content> 
+        <attribute>
+            <name>palabra</name>
+            <required>true</required>
+        </attribute>
+    </tag>
+</taglib>
